@@ -78,7 +78,7 @@ const Gallery = () => {
               <img src={slide.src} alt={`Slide ${index}`} className="slide-image" />
               <div className="call_to_action_container">
                 <p className="slide-description">{slide.description}</p>
-                <a href={slide.link} className="call_to_action">Comprar</a>
+                <a href={slide.link} className="call_to_action">Comprar cosita</a>
               </div>
             </div>
           </SwiperSlide>
