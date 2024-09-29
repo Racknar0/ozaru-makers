@@ -1,0 +1,43 @@
+// Container
+
+
+%container {
+  --padding-inline: 1.6rem;
+  max-width: calc(1160px + (var(--padding-inline) * 2));
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
+
+  @include media-query(tablet) {
+    --padding-inline: 1.2rem;
+  }
+}
+
+%admin-container {
+  --padding-inline: 1.6rem;
+
+  max-width: calc(1408px + (var(--padding-inline) * 2));
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
+
+}
+
+%reset-btn {
+  // Reset styles
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+%white-filter{
+  // filtro color #fff
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%) hue-rotate(48deg) brightness(112%) contrast(100%);
+}
+
+%black-filter{
+  // filtro color #000
+  filter: brightness(0) saturate(100%)
+}

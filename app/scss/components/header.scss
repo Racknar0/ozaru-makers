@@ -1,0 +1,50 @@
+@import '../mixins/mixins';
+@import '../base/variables';
+@import '../base/extends';
+
+header {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(1643%) hue-rotate(185deg) brightness(113%) contrast(101%);
+  transition: filter 0.3s ease; // Transición suave cuando el filtro cambia
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; // Para asegurarse de que esté por encima de otros elementos
+  background-color: transparent; // Fondo transparente
+
+  &.scroll-active {
+    filter: none; // Elimina el filtro cuando se hace scroll
+    background-color: rgba(255, 255, 255, 1); // Cambia el fondo si es necesario
+  }
+
+  nav {
+    background-color: transparent;
+
+    .navbar-toggler {
+      // Estilos para la barra del menú colapsado
+    }
+
+    .navbar-collapse {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      .navbar-brand {
+        img {
+          width: 16rem;
+          height: auto;
+          margin-right: 4rem;
+        }
+      }
+
+      .navbar-nav {
+        gap: 3rem;
+
+        .nav-item {
+          .nav-link {
+            font-family: 'lato-bold';
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

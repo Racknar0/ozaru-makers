@@ -1,0 +1,33 @@
+.slider-container{
+    .swiper {
+        .swiper-wrapper{
+            .swiper-slide{
+                .slide-content{
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 20px !important; /* Ajusta la distancia desde el fondo. Aquí la subimos a 20px */
+            color: white;
+
+            .swiper-pagination-bullet{
+                background-color: white;
+                opacity: 0.5;
+                width: 1.6rem;
+                height: 1.6rem;
+                margin: 0 0.8rem;
+
+                &.swiper-pagination-bullet-active{
+                    opacity: 1;
+                }
+            }
+          }
+    }
+}

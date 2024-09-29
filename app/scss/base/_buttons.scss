@@ -1,0 +1,53 @@
+
+@import '../mixins/mixins';
+@import '../base/variables';
+
+%btn-white {
+    background-color: $c-white-1;
+    color: $c-orange-1;
+    border: 1px solid $c-white-1;
+    border-radius: 4px;
+  
+    &:hover {
+      background-color: $c-orange-1;
+      color: $c-white-1;
+    }
+  }
+
+
+  %btn-transparent {
+    background-color: transparent;
+    color: $c-white-1;
+    border: 1px solid $c-white-1;
+    border-radius: 4px;
+  
+    &:hover {
+      background-color: $c-orange-1;
+      color: $c-white-1;
+    }
+  }
+  
+
+  %btn-orange {
+    background-color: $c-orange-1;
+    color: $c-white-1;
+    border: 1px solid $c-orange-1;
+    border-radius: 4px;
+  
+    &:hover {
+      background-color: $c-orange-2;
+    }
+  }
+
+
+    %btn-transparent-border-black {
+      background-color: transparent;
+      color: $c-back-1;
+      border: 1px solid $c-back-1;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $c-back-1;
+        color: $c-white-1;
+      }
+    }
